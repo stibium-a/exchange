@@ -1,0 +1,15 @@
+<div class="container">
+
+  <app-title></app-title>
+
+  <app-switch 
+    (showPanelStatus)="showPanelFunc($event)" 
+    [flag]="bgUrl">
+  </app-switch>
+
+  <app-content 
+    (bgImage)="setImg($event)" 
+    [marker]="showPanelsProperty">
+  </app-content>
+
+</div>

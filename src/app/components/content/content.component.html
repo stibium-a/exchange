@@ -1,0 +1,47 @@
+<div *ngIf="!marker; else showChange" class="calcPanel">
+  <p class="date">{{ now }}</p>
+
+  <div class="info">
+    <p class="defaultCurrency">Default currency:
+      <select name="" id="defMonSel" class="selectItem"
+        (change)="setSelectDefault(selDefault);search(); handleImage(selDefault)" (focus)="setSelectedIndex(selDefault)"
+        #selDefault>
+
+        <option *ngFor="let elem of moneyArray" value="{{elem.name}}">
+
+          {{ elem.name.toUpperCase() }}
+
+        </option>
+
+      </select>
+    </p>
+
+    <p class="calculate">
+      <input type="number" class="money" #moneyInput (input)="calcMoneyFunc(moneyInput)">
+      <span>&nbsp; {{ defaultSelectValue }}</span>
+
+      <span> = {{ calcMoneyResult | number: '.2-2' }}</span>
+
+      <select name="" id="calcSelect" class="selectItem" (change)="calcMoneyFunc(moneyInput)">
+
+        <option *ngFor="let elem of moneyArrayExchanged" value="{{elem.name}}">{{ elem.name.toUpperCase() }}
+
+        </option>
+      </select>
+
+    </p>
+
+  </div>
+</div>
+
+<ng-template #showChange>
+  <p class="date">{{ now }}</p>
+  <div class="changePanel">
+
+    <ul>
+      <li *ngFor="let elem of moneyArrayExchanged">
+        1 {{ defaultSelectValue }} = {{ elem.exchangeValue | number: '.2-2'}} {{ elem.name }}
+      </li>
+    </ul>
+  </div>
+</ng-template>

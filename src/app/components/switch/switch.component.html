@@ -1,0 +1,17 @@
+<div class="wrapper">
+
+  <button class="btn imgBtn" (click)="showPanelFunc('calc')" [ngClass]="{'bgClass' : setCalculateButtonBG()}">
+
+    <img [src]="flag" alt="" srcset="" class="flagImg">
+    
+    Calculate
+
+  </button>
+
+  <button class="btn" (click)="showPanelFunc('change')" [ngClass]="{'bgClass' : setExchangeButtonBG()}">
+
+    Current
+
+  </button>
+
+</div>

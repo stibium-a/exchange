@@ -1,0 +1,82 @@
+body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.date{
+  width: fit-content;
+  margin: auto;
+  font-size: 22px;
+}
+
+.defaultCurrency{
+  font-size: 20px;
+  width: fit-content;
+  margin: 10px auto 15px auto;
+}
+
+.selectItem{
+  position: relative;
+  -webkit-appearance: button;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  height: 2.2em;
+  margin: 2px;
+  padding: 0.3em 0.6em;
+  background: white;
+  border: 1px solid #aaaaaa;
+  border-radius: 0.3em;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.85em;
+  font-weight: 600;
+  overflow: hidden;
+  text-shadow: 0 1px 0 white;
+  -webkit-transition: box-shadow 200ms, border-color 200ms;
+  -moz-transition: box-shadow 200ms, border-color 200ms;
+  transition: box-shadow 200ms, border-color 200ms;
+  white-space: nowrap; 
+  outline: none;
+}
+
+.selectItem:hover{
+  border-color: green;
+}
+
+.calculate{
+  width: fit-content;
+  margin: auto;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.money{
+  width: 75px;
+  height: 20px;
+}
+
+#calcSelect{
+  margin-left: 10px;
+}
+
+.changePanel{
+  width: 300px;
+  margin: 15px auto 0 auto;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.changePanel ul{
+  padding: 0;
+  margin: 0;
+}
+
+.changePanel>ul>li{
+  list-style-type: none;
+  padding: 7px 0;
+  width: fit-content;
+  margin: auto;
+}

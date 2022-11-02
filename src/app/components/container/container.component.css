@@ -1,0 +1,9 @@
+.container{
+  border: 1px solid #000;
+  width: 550px;
+  height: 270px;
+  margin: auto;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+}

@@ -1,0 +1,35 @@
+.wrapper{
+  width: 380px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.btn{
+  width: 185px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.imgBtn{
+  display: flex;
+  align-items: center;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: azure;
+}
+
+.flagImg{
+  width: 35px;
+  height: 30px;
+  padding-right: 12px;
+}
+
+.bgClass{
+  border: 2px solid green;
+  transition: all 0.5s;
+}
